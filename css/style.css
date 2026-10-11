@@ -1,0 +1,38 @@
+/* Styling for GlowWell Beauty Clinic */
+
+:root {
+    --primary-color: #8a3b80;
+    --background-color: #f4f4f9;
+    --card-background: #ffffff;
+    --text-color: #333333;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+
+}
+
+.container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: var(--card-background);
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+
+}
+
+p {
+    line-height: 1.6;
+}
