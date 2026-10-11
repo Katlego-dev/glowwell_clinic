@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlowWell Beauty Clinic</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+        <div class="container">
+            <h1>Welcome to GlowWell Beauty Clinic</h1>
+            <p>This is a test page to verify that AMPPS, PHP, and our external CSS
+                stylesheet are working properly</p>
+</div>
+    
+</body>
+</html>
