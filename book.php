@@ -5,7 +5,7 @@ require_once 'db.php';
 $servicesStmt = $pdo->query("SELECT * FROM services ORDER BY service_name ASC");
 $services = $servicesStmt->fetchAll();
 
-//Fetch saff members with user details from database
+//Fetch staff members with user details from database
 $staffStmt = $pdo->query("
 SELECT s.staff_id, u.full_name, s.specialization
 FROM staff s
@@ -34,7 +34,7 @@ $staffMembers = $staffStmt->fetchAll();
             <div class="alert alert-success">Appointment booked successfully!</div>
             <?php elseif (isset($_GET['status']) && $_GET['status'] === 'error'): ?>
                 <div class="alert alert-danger">
-                    <?php echo htmlspecialchars($_GET['message'] ?? 'An error occured.'); ?>
+                    <?php echo htmlspecialchars($_GET['message'] ?? 'An error occurred.'); ?>
             </div>
             <?php endif; ?>
 
