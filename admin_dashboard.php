@@ -89,7 +89,7 @@ $sql = "
 
                                                     <select name="status" class="select-sm">
                                                         <option value="pending" <?php if($app['status'] == 'pending') echo 'selected'; ?>>Pending</option>
-                                                        <option value="confirmed" <?php if($app['status'] == 'confirmed') echo 'selected'; ?>>Cornfirmed</option>
+                                                        <option value="confirmed" <?php if($app['status'] == 'confirmed') echo 'selected'; ?>>Confirmed</option>
                                                         <option value="completed" <?php if($app['status'] == 'completed') echo 'selected'; ?>>Completed</option>
                                                         <option value="cancelled" <?php if($app['status'] == 'cancelled') echo 'selected'; ?>>Cancelled</option>
                                             </select>
