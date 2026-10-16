@@ -1,4 +1,5 @@
 <?php 
+session_start();
 require_once 'db.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -12,6 +13,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     //Check for empty fields
     if (!$customer_id || !$service_id || !$staff_id || empty($date) || empty($time)) {
         header("Location: book.php?status=error&message=" . urlencode("All fields are required."));
+        exit;
+    }
+
+    //Past date check on backend
+    if (strtotime($date) < strtotime(date('Y-m-d'))) {
+        header("Location: book.php?status=error&message=" . urlencode("You cannot select a date in the past."));
         exit;
     }
 
