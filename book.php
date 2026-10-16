@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'db.php';
 
 //Fetch available services from database
@@ -21,6 +22,8 @@ $staffMembers = $staffStmt->fetchAll();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book Appointment - GlowWell Beauty Clinic</title>
     <link rel="stylesheet" href="css/style.css">
+    <!-- Include JS Client-side Validation -->
+     <script src="js/validation.js" defer></script>
 </head>
 
 <body>
