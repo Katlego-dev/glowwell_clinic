@@ -253,8 +253,8 @@ table tr:hover {
 
 /* Homepage Styles */
 .hero-section {
-    background: linear-gradient(135deg, #8a3b80, #6e2e66);
-    color: white;
+    background: #8a3b80;
+    color: #ffffff;
     padding: 60px 20px;
     text-align: center;
     border-radius: 8px;
@@ -262,13 +262,13 @@ table tr:hover {
 
 }
 
-.hero-secion h1 {
-    font-size: 36px;
+.hero-section h1 {
+    
     margin-bottom: 15px;
     color: #ffffff;
 
 }
-.her-section p {
+.hero-section p {
     font-size: 18px;
     margin-bottom: 25px;
     opacity: 0.9;
